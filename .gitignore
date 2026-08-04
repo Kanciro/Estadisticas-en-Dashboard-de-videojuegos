@@ -1,0 +1,23 @@
+# Entornos virtuales de Python
+venv/
+env/
+.venv/
+
+# Archivos compilados e caché de Python
+__pycache__/
+*.py[cod]
+
+# Variables de entorno (Credenciales y claves de API)
+.env
+.env.local
+
+# Frontend / Node modules
+node_modules/
+.next/
+dist/
+build/
+
+# Configuración del sistema operativo / IDE
+.DS_Store
+.vscode/
+.idea/
