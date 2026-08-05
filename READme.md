@@ -68,26 +68,3 @@ NEXT_PUBLIC_API_URL=http://localhost:8000/api/v1
 
 [ ] Filtro de ignorados (ignore-list) en el agente para omitir software que no sea de juego.
 
-
----
-
-### 2. Guardar Cambios y Crear Punto de Control en Git
-
-Ejecuta los siguientes comandos en tu terminal desde la raíz del proyecto para confirmar el punto de control (*commit tag*):
-
-```bash
-# 1. Verificar los archivos modificados
-git status
-
-# 2. Agregar todos los cambios al stage (incluyendo el README)
-git add .
-
-# 3. Crear el commit del punto de control
-git commit -m "feat: integración completa de telemetría (Agente -> FastAPI -> Supabase -> Next.js)"
-
-# 4. Crear una etiqueta (tag) para marcar este hito estable
-git tag -a v1.0.0-beta -m "Punto de control: MVP de la pipeline de telemetría y dashboard funcionando"
-
-# 5. Subir los cambios y las etiquetas a GitHub
-git push origin main
-git push origin --tags
